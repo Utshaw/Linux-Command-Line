@@ -1,0 +1,3 @@
+"Folder Name" use double quote for directory name having space. 
+Example:
+cd "Folder Name" 
