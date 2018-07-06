@@ -1,0 +1,6 @@
+'cat file.txt' prints the file.txt texts in terminal
+'cat file1.txt file2.txt'  prints combined texts of two files
+'cat -b file.txt' adds linenumber to non-blank lines
+'cat -n file.txt' adds linenumber to all lines
+'cat -s file.txt' suppress multiple blank line with one 
+'cat -E file.txt' replace each blank line with $ symbol
