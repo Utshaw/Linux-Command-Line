@@ -10,7 +10,10 @@ Terminal is just an interface between the shell program and command. This is whe
 Command are text that are written in the terminal.
 
 ### Basics
-0 = standard input; 1 = standard output; 2 = standard error
+0 = standard input; 1 = standard output; 2 = standard error \
+
+#### tty
+command to show terminal file location
 
 
 #### man
@@ -47,6 +50,8 @@ standard input redirection:
 `cat < input.txt` # redirects standard input; reads from the input.txt and loads them into cat program
 
 `cat 0< input.txt 1> output.txt` # redirects standard input; reads from the input.txt and pipes them into output.txt
+
+`cat 0< input.txt > /dev/pts/3` # redirects std input and std output; reads from input.txt and sends them to another terminal
 
 
 
