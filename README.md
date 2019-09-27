@@ -8,3 +8,6 @@ Terminal is just an interface between the shell program and command. This is whe
 
 ### Commands
 Command are text that are written in the terminal.
+
+## Resources
+man page: https://www.youtube.com/watch?v=uJnrh9hAQR0
