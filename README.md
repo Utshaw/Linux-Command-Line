@@ -32,11 +32,11 @@ Output:
 #### cat
 reads from standard input and writes into standaed output
 
-`cat 1> output.txt` # cleans the taget file and writes into it
+`cat 1> output.txt` # redirects standard output;cleans the taget file and writes into it
 
-`cat > output.txt` # cleans the taget file and writes into it
+`cat > output.txt` # redirects standard output;cleans the taget file and writes into it
 
-`cat >> output.txt` # appends into the target file
+`cat >> output.txt` # redirects standard output;appends into the target file
 
 
 
