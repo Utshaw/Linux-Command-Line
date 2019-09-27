@@ -10,7 +10,21 @@ Terminal is just an interface between the shell program and command. This is whe
 Command are text that are written in the terminal.
 
 #### man
-search for specific keyword: `man -k "your keyword here"` (i.e `man -k "list directory contents"`)
+search for specific keyword: `man -k "your keyword here"` 
+
+`man -k "list directory contents"`
+
+Output:
+
+`dir (1)              - list directory contents`
+
+`ls (1)               - list directory contents`
+
+`ntfsls (8)           - list directory contents on an NTFS filesystem`
+
+`vdir (1)             - list directory contents`
+
+
 
 
 ## Resources
