@@ -9,6 +9,10 @@ Terminal is just an interface between the shell program and command. This is whe
 ### Commands
 Command are text that are written in the terminal.
 
+### Basics
+0 = standard input; 1 = standard output; 2 = standard error
+
+
 #### man
 search for specific keyword: `man -k "your keyword here"` 
 
