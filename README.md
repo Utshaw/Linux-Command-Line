@@ -33,7 +33,9 @@ Output:
 reads from standard input and writes into standaed output
 
 `cat 1> output.txt` # cleans the taget file and writes into it
+
 `cat > output.txt` # cleans the taget file and writes into it
+
 `cat >> output.txt` # appends into the target file
 
 
