@@ -46,7 +46,7 @@ standard input redirection:
 
 `cat < input.txt` # redirects standard input; reads from the input.txt and loads them into cat program
 
-`cat 0< input.txt` 1> output.txt` # redirects standard input; reads from the input.txt and pipes them into output.txt
+`cat 0< input.txt 1> output.txt` # redirects standard input; reads from the input.txt and pipes them into output.txt
 
 
 
