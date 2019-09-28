@@ -13,7 +13,8 @@ Command are text that are written in the terminal.
 0 = standard input; 1 = standard output; 2 = standard error \
 
 #### tty
-command to show terminal file location
+command to show current terminal file location
+
 
 
 #### man
@@ -54,6 +55,12 @@ standard input redirection:
 `cat 0< input.txt > /dev/pts/3` # redirects std input and std output; reads from input.txt and sends them to another terminal
 
 
+#### cut
+remove sections from each line of files
+
+example:
+
+`date | cut -d " " -f 1 | cat > date.txt` # pipes from date to cut then get the first field based on space delimiter and then pipes to date.txt
 
 
 
