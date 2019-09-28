@@ -125,8 +125,10 @@ remove files or directories <br />
 `rm -r delFolder` # deletes delFolder <br />
 `rm -r delFolder/del{1,2,3}` # # deletes del,1 del2, del3 folders <br />
 `rm -r delFolder/` #  deletes delFolder and everything inside of it <br />
+`rm -r delFolder/*` #  deletes  everything inside delFolder but not itself <br />
 `rm -ri delFolder/` # interactive deletion: asks before deletion of each file or folder <br />
 `rm delFile` # deletes delFile
+
 
 #### rmdir
 rmdir - remove empty directories <br />
@@ -142,6 +144,14 @@ generally used to create empty file[s]
 
 `touch aFolder/file{1,2,3}.txt` # creates three empty files inside aFolder
 
+#### cp
+cp - copy files and directories <br />
+cp [OPTION]... [-T] SOURCE DEST <br />
+cp [OPTION]... SOURCE... DIRECTORY <br />
+`cp file1.txt file2.txt` # file1 is source file2 is destination <br />
+`cp file1.txt file2.txt directory/` # file1 , file2 are sources directory is destination directory <br />
+`cp directory/* .` # copy everything from directory to current folder <br />
+`cp -r sourceDir/* destDir` # copy everything from sourceDir to destDir <br />
 
 
 
