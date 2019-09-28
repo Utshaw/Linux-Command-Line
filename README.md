@@ -169,9 +169,15 @@ mv - move (rename) files <br />
 
 #### locate 
 locate - find files by name <br />
-`locate utshaw` # searches for file or directories with case sensitive name utshaw in their path
-`locate -i uTsHaW` # searches for file or directories with case insensitive name utshaw in their path
-`locate  -c uTsHaW` # count the number of occurrences of utshaw found
+locate command uses a database which gets updated once a day. this can show outdated result <br />
+in order to update the database use: `sudo updatedb`  <br />
+options: -e: Print only entries that refer to files existing at the time locate is run. <br />
+`locate utshaw` # searches for file or directories with case sensitive name utshaw in their path <br />
+`locate -i uTsHaW` # searches for file or directories with case insensitive name utshaw in their path <br />
+`locate  -c uTsHaW` # count the number of occurrences of utshaw found <br />
+`locate -e utshaw` # outputs actually existing file <br />
+`sudo updatedb` # updates the database `locate` command uses for searching
+
 
 
 
