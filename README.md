@@ -63,6 +63,13 @@ example:
 `date | cut -d " " -f 1 | cat > date.txt` # pipes from date to cut then get the first field based on space delimiter and then pipes to date.txt
 
 
+#### tee 
+read from standard input and write to standard output and files
+
+example:
+
+`date | tee fulldate.txt | cut -d " " -f 1` # two pipes from date one gets the output to be written to fulldate.txt , the other goes to cut command
+ 
 
 
 ## Resources
