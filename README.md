@@ -5,10 +5,10 @@
 Shell is a program that is capable of understanding shell commands. Bash shell is one of the most propular shell programs. 
 
 ### Terminal
-Terminal is just an interface between the shell program and command. This is where we write commands.
+Terminal is just a graphical interface between the shell program and command. This is where we write commands.
 
 ### Commands
-Command are text that are written in the terminal.
+Command are instruction that are written in the terminal and submitted to the shell for interpretation.
 
 ### Basics
 - 0 = standard input; 1 = standard output; 2 = standard error <br />
