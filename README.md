@@ -38,6 +38,9 @@ steps:
 - `?`  means any character occuring once i.e `?,txt` means any file named 'A.txt' or 'B.txt'
 - `[]` means choose any one from inside of the square (must choose exactly one) `file[123].txt` matches `file1.txt` , `file2.txt`, `file3.txt` but doesn't select `file12.txt` or `file.txt`
 
+### brace expansion
+- `echo {1..10}` outputs `1 2 3 4 5 6 7 8 9 10`
+- `echo {A,B,C}-{1,2,3}` outputs `A-1 A-2 A-3 B-1 B-2 B-3 C-1 C-2 C-3`
 
 
 ## Commands
