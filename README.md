@@ -11,8 +11,9 @@ Terminal is just an interface between the shell program and command. This is whe
 Command are text that are written in the terminal.
 
 ### Basics
-0 = standard input; 1 = standard output; 2 = standard error <br />
-`tee` command helps continue flowing the output whereas output redirection halts the output upto that stage
+- 0 = standard input; 1 = standard output; 2 = standard error <br />
+- `tee` command helps continue flowing the output whereas output redirection halts the output upto that stage <br />
+- all command doesn't accept standard input they only accept command line arguments
 
 #### tty
 command to show current terminal file location
