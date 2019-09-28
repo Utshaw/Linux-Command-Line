@@ -176,10 +176,25 @@ options: -e: Print only entries that refer to files existing at the time locate 
 `locate -i uTsHaW` # searches for file or directories with case insensitive name utshaw in their path <br />
 `locate  -c uTsHaW` # count the number of occurrences of utshaw found <br />
 `locate -e utshaw` # outputs actually existing file <br />
-`sudo updatedb` # updates the database `locate` command uses for searching
+`sudo updatedb` # updates the database `locate` command uses for searching <br />
+`locate --existing --follow utshaw` # checks if the file really exists and omit broken symbolic links <br />
+
+#### find
+find - search for files in a directory hierarchy <br />
+`find` command doesn't require database to operate it's always upto date <br />
+`locate` only outputs files whereas `find` outputs files and folders <br />
+`find` # outputs every files and directories from the current directory tree recursively <br />
+`find . -maxdepth 1` # det maximum depth for search <br />
+`find . -type f` # outputs only files <br />
+`find . -type d` # outputs only directories <br /> 
+`find -type f -size +100k` # outputs files with size > 100k <br />
+`find -type f -size -100k` # outputs files with size < 100k  <br />
+`find -type f -size +100k -size -5M` # outputs files with size > 100k \& <5M <br />
 
 
-
+#### wc
+wc - print newline, word, and byte counts for each file <br />
+`wc -l`  # outputs number of lines the command received in the standard input <br />
 
 
 
