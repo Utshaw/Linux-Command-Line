@@ -41,6 +41,7 @@ steps:
 ### brace expansion
 - `echo {1..10}` outputs `1 2 3 4 5 6 7 8 9 10`
 - `echo {A,B,C}-{1,2,3}` outputs `A-1 A-2 A-3 B-1 B-2 B-3 C-1 C-2 C-3`
+- `mkdir {jan, feb, mar, apr, may}_{2019,2020}` # creates 5\*2 directories 
 
 
 ## Commands
@@ -118,6 +119,12 @@ Example: <br />
 `file .bash_aliases` <br />
 Output: <br />
 .bash_aliases: ASCII text
+
+#### rm 
+remove files or directories
+
+#### touch
+generally used to create empty file[s]
 
 
 ## Resources
