@@ -26,6 +26,11 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `directory/*` means everything inside the directory but not itself
 - `directory/` means directory itself + everything inside the directory 
 
+### nano text editor
+^ symbol = ctrl <br />
+M\- symbol = alt <br />
+Nano configuration file location: /etc//nanorc
+
 ### aliases
 aliases are mainly used as shorter form of the original longer command
 steps:
