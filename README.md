@@ -21,6 +21,7 @@ Command are instruction that are written in the terminal and submitted to the sh
 - single dot `.` is current directory
 - double dot `..` is previous directory
 - press double tab to show all completion possible with current amount of text
+- file extension doesn't matter in linux unlike windows
 
 ### aliases
 aliases are mainly used as shorter form of the original longer command
