@@ -121,10 +121,28 @@ Output: <br />
 .bash_aliases: ASCII text
 
 #### rm 
-remove files or directories
+remove files or directories <br />
+`rm -r delFolder` # deletes delFolder <br />
+`rm -r delFolder/del{1,2,3}` # # deletes del,1 del2, del3 folders <br />
+`rm -r delFolder/` #  deletes delFolder and everything inside of it <br />
+`rm -ri delFolder/` # interactive deletion: asks before deletion of each file or folder <br />
+`rm delFile` # deletes delFile
+
+#### rmdir
+rmdir - remove empty directories <br />
+`rmdir delFolder` # removes delFolder only if it is empty
+
+#### mkdir
+mkdir - make directories <br />
+`mkdir -p aFolder/bFolder/cFile` # creates the full path along the way of creating folders and files <br />
 
 #### touch
+touch - change file timestamps <br />
 generally used to create empty file[s]
+
+`touch aFolder/file{1,2,3}.txt` # creates three empty files inside aFolder
+
+
 
 
 ## Resources
