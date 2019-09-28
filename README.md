@@ -167,6 +167,14 @@ mv - move (rename) files <br />
 `mv oldFolder newFolder` # renames to newFolder <br />
 `mv directory/* .` #moves everything from directory folder to current directory <br />
 
+#### locate 
+locate - find files by name <br />
+`locate utshaw` # searches for file or directories with case sensitive name utshaw in their path
+`locate -i uTsHaW` # searches for file or directories with case insensitive name utshaw in their path
+`locate  -c uTsHaW` # count the number of occurrences of utshaw found
+
+
+
 
 
 ## Resources
