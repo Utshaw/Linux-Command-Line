@@ -75,6 +75,14 @@ example:
 
 `date | tee fulldate.txt | cut -d " " -f 1` # two pipes from date one gets the output to be written to fulldate.txt , the other goes to cut command
  
+#### xargs
+build and execute command lines from standard input
+
+example: echo doesn't support standard input only supports command line argument
+
+`date | xargs echo` # prints the date in standard output
+
+
 
 
 ## Resources
