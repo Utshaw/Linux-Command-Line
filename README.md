@@ -37,7 +37,6 @@ steps:
 - `*` means abything i.e `*.txt` matches any file with `.txt` extension
 - `?`  means any character occuring once i.e `?,txt` means any file named 'A.txt' or 'B.txt'
 - `[]` means choose any one from inside of the square (must choose exactly one) `file[123].txt` matches `file1.txt` , `file2.txt`, `file3.txt` but doesn't select `file12.txt` or `file.txt`
-- 
 
 
 
