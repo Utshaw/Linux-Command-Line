@@ -17,6 +17,9 @@ Command are instruction that are written in the terminal and submitted to the sh
 - pipe `|` is used for connecting starndard output of one command to standard input of anohter command
 - all command doesn't accept standard input, they only accept command line arguments, `xargs` are used in these cases
 - ~ is home directory for current user i.e /home/utshaw
+- directories or files starting with dot (.) are hidden files
+- single dot . is current directory
+- double dot .. is previous directory
 
 
 ### aliases
