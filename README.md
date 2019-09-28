@@ -31,6 +31,8 @@ steps:
 - restart terminal
 - enter aliasName i.e `getPythonVersion`
 
+## Commands
+
 #### tty
 command to show current terminal file location
 
