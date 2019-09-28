@@ -50,7 +50,7 @@ standard input redirection:
 
 `cat < input.txt` # redirects standard input; reads from the input.txt and loads them into cat program
 
-`cat 0< input.txt 1> output.txt` # redirects standard input; reads from the input.txt and pipes them into output.txt
+`cat 0< input.txt 1> output.txt` # redirects standard input; reads from the input.txt and redirects them into output.txt
 
 `cat 0< input.txt > /dev/pts/3` # redirects std input and std output; reads from input.txt and sends them to another terminal
 
