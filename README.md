@@ -103,8 +103,11 @@ example: echo doesn't support standard input only supports command line argument
 
 #### file
 determine file type <br />
-file [file_name]
-
+file [file_name] <br />
+Example: <br />
+`file .bash_aliases` <br />
+Output: <br />
+.bash_aliases: ASCII text
 
 ## Resources
 man page: https://www.youtube.com/watch?v=uJnrh9hAQR0
