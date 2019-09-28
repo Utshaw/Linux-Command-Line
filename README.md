@@ -13,7 +13,9 @@ Command are text that are written in the terminal.
 ### Basics
 - 0 = standard input; 1 = standard output; 2 = standard error <br />
 - `tee` command helps continue flowing the output whereas output redirection halts the output upto that stage <br />
-- all command doesn't accept standard input they only accept command line arguments
+- pipe `|` is used for connecting starndard output of one command to standard input of anohter command
+- all command doesn't accept standard input, they only accept command line arguments, `xargs` are used in these cases
+
 
 #### tty
 command to show current terminal file location
