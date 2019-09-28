@@ -100,7 +100,10 @@ example: echo doesn't support standard input only supports command line argument
 
 `date | xargs echo` # prints the date in standard output
 `cat fileToDelete.txt | xargs rm` # delete file with filename written in fileToDelete.txt
- 
+
+#### file
+determine file type <br />
+file [file_name]
 
 
 ## Resources
