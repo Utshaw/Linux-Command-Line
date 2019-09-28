@@ -1,4 +1,5 @@
 # Linux-Command-Line
+## Bash Shell Scripting
 
 ### Shell
 Shell is a program that is capable of understanding shell commands. Bash shell is one of the most propular shell programs. 
@@ -11,7 +12,7 @@ Command are text that are written in the terminal.
 
 ### Basics
 0 = standard input; 1 = standard output; 2 = standard error <br />
-tee command helps continue flowing the output whereas output redirection halts the output upto that stage
+`tee` command helps continue flowing the output whereas output redirection halts the output upto that stage
 
 #### tty
 command to show current terminal file location
