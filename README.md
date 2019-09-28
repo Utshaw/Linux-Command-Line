@@ -190,7 +190,7 @@ find - search for files in a directory hierarchy <br />
 `find -type f -size +100k` # outputs files with size > 100k <br />
 `find -type f -size -100k` # outputs files with size < 100k  <br />
 `find -type f -size +100k -size -5M` # outputs files with size > 100k \& <5M <br />
-
+`sudo  find -maxdepth 3  -type f  -size +10k -size -12k -exec cp {} ~/Desktop/test/ \;` # copies each of those files to test folder
 
 #### wc
 wc - print newline, word, and byte counts for each file <br />
