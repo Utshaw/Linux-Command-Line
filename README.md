@@ -16,11 +16,11 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `tee` command helps continue flowing the output whereas output redirection halts the output upto that stage <br />
 - pipe `|` is used for connecting starndard output of one command to standard input of anohter command
 - all command doesn't accept standard input, they only accept command line arguments, `xargs` are used in these cases
-- ~ is home directory for current user i.e /home/utshaw
-- directories or files starting with dot (.) are hidden files
-- single dot . is current directory
-- double dot .. is previous directory
-
+- `~` is home directory for current user i.e /home/utshaw
+- directories or files starting with dot `.` are hidden files
+- single dot `.` is current directory
+- double dot `..` is previous directory
+- press double tab to show all completion possible with current amount of text
 
 ### aliases
 aliases are mainly used as shorter form of the original longer command
