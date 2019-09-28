@@ -154,6 +154,13 @@ cp [OPTION]... SOURCE... DIRECTORY <br />
 `cp -r sourceDir/* destDir` # copy everything from sourceDir to destDir <br />
 
 
+#### mv 
+mv - move (rename) files <br />
+`mv oldName.txt newName.txt` # renames to newName.txt <br />
+`mv oldFolder newFolder` # renames to newFolder <br />
+`mv directory/* .` #moves everything from directory folder to current directory <br />
+
+
 
 ## Resources
 man page: https://www.youtube.com/watch?v=uJnrh9hAQR0
