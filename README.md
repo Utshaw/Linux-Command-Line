@@ -23,7 +23,7 @@ Command are instruction that are written in the terminal and submitted to the sh
 - press double tab to show all completion possible with current amount of text
 - file extension doesn't matter in linux unlike windows
 - In order to determine the file type linux reads piece of code inside the top of each file known as header
-- `directory/*` means everything inside the directory not itself
+- `directory/*` means everything inside the directory but not itself
 - `directory/` means directory itself + everything inside the directory 
 
 ### aliases
