@@ -18,6 +18,15 @@ Command are text that are written in the terminal.
 - all command doesn't accept standard input, they only accept command line arguments, `xargs` are used in these cases
 
 
+### aliases
+aliases are mainly used as shorter form of the original longer command
+steps:
+- create a `.bash_aliases` file in home 
+- alias aliasName="<long_command>" i.e `alias getPythonVersion="python --version"`
+- save the file
+- restart terminal
+- enter aliasName i.e `getPythonVersion`
+
 #### tty
 command to show current terminal file location
 
