@@ -51,8 +51,8 @@ steps:
 - `mkdir {jan, feb, mar, apr, may}_{2019,2020}` # creates 5\*2 directories 
 
 ### Archiving file
-1. Make tarball from the files
-2. Compress tarball
+1. Make tarball from the files using `tar` command
+2. Compress tarball using `gzip` or `bzip2` 
 
 
 ## Commands
