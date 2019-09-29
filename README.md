@@ -93,7 +93,33 @@ standard input redirection:
 
 `cat 0< input.txt 1> output.txt` # redirects standard input; reads from the input.txt and redirects them into output.txt
 
-`cat 0< input.txt > /dev/pts/3` # redirects std input and std output; reads from input.txt and sends them to another terminal
+`cat 0< input.txt > /dev/pts/3` # redirects std input and std output; reads from input.txt and sends them to another terminal 
+
+`cat file1.txt file2.txt file3.txt > compile.txt` # concatenating all of the outputs and puts them into compile.txt <br/>
+`cat file[1-3]txt > compile.txt` # concatenating all of the outputs and puts them into compile.txt <br/>
+
+
+#### tac
+tac - concatenate and print files in reverse <br/>
+`tac file.txt` # outputs the lines of the file in reverse order. the last line will be first. the first line will be last horizontally same vertically reversed <br />
+
+#### rev
+rev - reverse lines characterwise <br />
+`rev file.txt` # vertically same horizontally reversed each line  <br />
+
+#### less
+less - opposite of more <br />
+
+#### head
+head - output the first part of files <br />
+by default shows the first ten lines <br />
+`head -n 5 file.txt` # outputs first 5 lines of file.txt <br />
+`find . | head -n 2` # outputs only first 2  results <br />
+
+#### tail
+tail - output the last part of files <br />
+
+
 
 
 #### cut
@@ -159,6 +185,16 @@ cp [OPTION]... SOURCE... DIRECTORY <br />
 `cp file1.txt file2.txt directory/` # file1 , file2 are sources directory is destination directory <br />
 `cp directory/* .` # copy everything from directory to current folder <br />
 `cp -r sourceDir/* destDir` # copy everything from sourceDir to destDir <br />
+
+#### sort
+sort - sort lines of text files <br />
+`sort file.txt` # sorts the content of file.txt alphabetically <br />
+`sort -r file.txt` # sorts the content of file.txt in reverse alphabetical way <br />
+`sort -n numbers.txt` # sort based on value of the numbers <br />
+`sort -u numbers.txt` # sort and outputs only unique <br />
+`ls -l | head -n 20 | sort -k 5 -n ` # sorts files based on size  <br />
+
+
 
 
 #### mv 
