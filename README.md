@@ -56,7 +56,26 @@ steps:
 #### tty
 command to show current terminal file location
 
+#### grep
+grep  searches  for  PATTERN  in each FILE. <br />
+grep returns lines that contain a piece of text wildcards also works <br />
+grep [OPTIONS] PATTERN [FILE...] <br />
+options: <br />
+- \-C NUM, \-NUM, \-\-context=NUM Print NUM lines of output context. 
+- \-v, \-\-invert-match Invert the sense of matching, to select non-matching lines. 
+- \-i, \-\-ignore-case Ignore case distinctions, so that characters that differ  only  in  case  match  each other.
+<br />
 
+grep command is canse\-sensitive <br />
+
+`grep e hello.txt` # outputs the line(s) containing letter e in hello.txt <br />
+`grep you -c gadsby.txt` # outputs number of references of word 'you' in gadsby.txt file <br />
+`grep -i gadsby gadsby.txt`  # case insensitive search <br />
+`grep -i "our boys" gadsby.txt` # sentence search <br />
+`grep -vi e gadsby.txt` # outputs those lines without the letter e  <br />
+`grep -ic "e" hello.txt  gadsby.txt` # multiple file search <br />
+
+ 
 
 #### man
 search for specific keyword: `man -k "your keyword here"` 
@@ -194,7 +213,7 @@ oprtions: <br />
 - \-r, \-\-reverse reverse the result of comparisons
 - \-h, \-\-human-numeric-sort compare human readable numbers (e.g., 2K 1G)
 
-**Note: -M and -n can't be used together**
+**Note: -M and -n options can't be used together**
 
 `sort file.txt` # sorts the content of file.txt alphabetically <br />
 `sort -r file.txt` # sorts the content of file.txt in reverse alphabetical way <br />
@@ -203,8 +222,6 @@ oprtions: <br />
 `ls -l | head -n 20 | sort -k 5 -n ` # sorts files based on size  <br />
 `ls -lh | head -n 20 | sort -k 5  -hr` # human readable format sort
 `ls -lh /etc | head -n 20 | sort -k 6 -M` # sort by month
-
-
 
 
 #### mv 
@@ -236,7 +253,15 @@ find - search for files in a directory hierarchy <br />
 `find -type f -size +100k` # outputs files with size > 100k <br />
 `find -type f -size -100k` # outputs files with size < 100k  <br />
 `find -type f -size +100k -size -5M` # outputs files with size > 100k \& <5M <br />
-`sudo  find -maxdepth 3  -type f  -size +10k -size -12k -exec cp {} ~/Desktop/test/ \;` # copies each of those files to test folder
+`sudo  find -maxdepth 3  -type f  -size +10k -size -12k -exec cp {} ~/Desktop/test/ \;` # copies each of those files to test folder <br />
+`find -type f -name "test.txt"` #  case-sensitive searches for test.txt from current directory tree  <br />
+`find -type f -name "test*"` #  case-sensitive searches for files starting with test from current directory tree  <br />
+`find -type f -iname "test*"` #  case-insensitive searches for files starting with test from current directory tree  <br />
+`find -type f -name "*.py"` # finds all files with extension py <br />
+`find -type f -mmin -10` # finds all files those were modified less than ten minutes ago <br />
+`find -type f -mmin +1 -mmin -10` # finds all files those were modified greater than one minute ago and less than ten minutes ago <br />
+
+  
 
 #### wc
 wc - print newline, word, and byte counts for each file <br />
