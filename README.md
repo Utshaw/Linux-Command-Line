@@ -50,6 +50,10 @@ steps:
 - `echo {A,B,C}-{1,2,3}` outputs `A-1 A-2 A-3 B-1 B-2 B-3 C-1 C-2 C-3`
 - `mkdir {jan, feb, mar, apr, may}_{2019,2020}` # creates 5\*2 directories 
 
+### Archiving file
+1. Make tarball from the files
+2. Compress tarball
+
 
 ## Commands
 
@@ -261,7 +265,38 @@ find - search for files in a directory hierarchy <br />
 `find -type f -mmin -10` # finds all files those were modified less than ten minutes ago <br />
 `find -type f -mmin +1 -mmin -10` # finds all files those were modified greater than one minute ago and less than ten minutes ago <br />
 
-  
+#### tar
+tar - an archiving utility <br />
+options: <br />
+- \-c, \-\-create Create  a  new  archive. 
+- \-v, \-\-verbose Verbosely list files processed.
+- \-f lets tar command accept files
+- \-t List  the  contents of an archive. 
+`tar -cvf ourArchive.tar file[1-3].txt` # create a new archive named ourArchive.tar <br />
+`tar -tf ourArchive.tar ` # outputs contents of ourArchive.tar <br />
+`tar -xvf ourArchice.tar` # extracts ourArchive.tar <br />
+`tar -cvzf ourArchive.tar.gz diary.txt utshaw.txt diary.txt` # create gzip file in one command <br />
+ `tar -cvjf ourArchive.tar.bz2 diary.txt utshaw.txt diary.txt` # create bz2 file in one command <br />
+ `tar -xvzf ourArchive.tar.gz` # unzips from gz file <br />
+ `tar -xvjf ourArchive.tar.bz2` # unzips from bz2 file <br />
+ 
+#### gzip
+gzip is faster but with less compression power means file size won't be that small <br />
+`gzip ourArchive.tar` # compress the tar file with gz extension <br />
+`gunzip ourArchive.tar` # un-compress the gz file and give back tar file<br />
+
+
+#### bzip2
+bzip2 is slower but has higher compression power can compress to very small files <br />
+`bzip2 ourArchice.tar` # compress the tar file with .bz2 extension <br />
+`bunzip2 ourArchice.tar.bz2` # un-comress the bz2 file and gives back tar file <br />
+
+
+#### zip
+zip \- package and compress (archive) files <br />
+`zip ourZip.zip file1.txt file2.txt ` # creates zip file named ourZip.zip from file1.txt and file2.txt <br />
+
+
 
 #### wc
 wc - print newline, word, and byte counts for each file <br />
