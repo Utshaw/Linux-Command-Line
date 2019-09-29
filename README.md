@@ -188,6 +188,13 @@ cp [OPTION]... SOURCE... DIRECTORY <br />
 
 #### sort
 sort - sort lines of text files <br />
+oprtions: <br />
+- \-n, \-\-numeric\-sort compare according to string numerical value 
+- \-M, \-\-month\-sort 
+- \-r, \-\-reverse reverse the result of comparisons
+- \-h, \-\-human-numeric-sort compare human readable numbers (e.g., 2K 1G)
+
+
 `sort file.txt` # sorts the content of file.txt alphabetically <br />
 `sort -r file.txt` # sorts the content of file.txt in reverse alphabetical way <br />
 `sort -n numbers.txt` # sort based on value of the numbers <br />
