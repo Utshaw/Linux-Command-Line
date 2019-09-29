@@ -304,5 +304,6 @@ wc - print newline, word, and byte counts for each file <br />
 
 
 
+
 ## Resources
 man page: https://www.youtube.com/watch?v=uJnrh9hAQR0
