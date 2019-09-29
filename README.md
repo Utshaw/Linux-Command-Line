@@ -194,12 +194,15 @@ oprtions: <br />
 - \-r, \-\-reverse reverse the result of comparisons
 - \-h, \-\-human-numeric-sort compare human readable numbers (e.g., 2K 1G)
 
+**Note: -M and -n can't be used together**
 
 `sort file.txt` # sorts the content of file.txt alphabetically <br />
 `sort -r file.txt` # sorts the content of file.txt in reverse alphabetical way <br />
 `sort -n numbers.txt` # sort based on value of the numbers <br />
 `sort -u numbers.txt` # sort and outputs only unique <br />
 `ls -l | head -n 20 | sort -k 5 -n ` # sorts files based on size  <br />
+`ls -lh | head -n 20 | sort -k 5  -hr` # human readable format sort
+`ls -lh /etc | head -n 20 | sort -k 6 -M` # sort by month
 
 
 
