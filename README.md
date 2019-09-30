@@ -31,6 +31,14 @@ Command are instruction that are written in the terminal and submitted to the sh
 M\- symbol = alt <br />
 Nano configuration file location: /etc/nanorc
 
+### bash script file
+1. name the file as script.sh
+2. the first line will be #!/bin/bash (Shebang line)
+3. chmod +x script.sh
+4. In order to run the script from anywhere we need to add the path to $PATH environment variable
+5. In the end of the ~/.bashrc file add this line: `PATH="$PATH:$HOME/bin"`
+6. The above line will cause all of the files in `$HOME/bin` location to be avialable from terminal 
+
 ### aliases
 aliases are mainly used as shorter form of the original longer command
 steps:
