@@ -55,8 +55,10 @@ Each user gets a cron tab that lists which commands or scripts will be automatic
    `0,15,30,45  * * * * echo "Hello23"` # evry 15 minutes run this command <br />
    `*/15  \* \3 \* \* echo "Hello23"` # evry 3 days every 15 minutes run this command <br />
    `59 23 * JAN,DEC * echo Hello`  # run the command only on JAN and DEC each day at 23:59 <br />
-   
-   
+**Note: adding to environment variable $PATH won't let cron command know the command. **    <br />
+
+   `59 23 * * FRI bash ~/bin/script`  # run the script file named  /home/<user_name>/script <br />
+  
 
  
 
