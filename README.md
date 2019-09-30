@@ -1,5 +1,5 @@
 # Linux-Command-Line
-## Bash Shell Scripting
+## Bash Shell Command \& Scripting
 
 ### Shell
 Shell is a program that is capable of understanding shell commands. Bash shell is one of the most propular shell programs. 
@@ -40,6 +40,17 @@ Nano configuration file location: /etc/nanorc
 5. In the end of the ~/.bashrc file add this line: `PATH="$PATH:$HOME/bin"`
 6. The above line will cause all of the files in `$HOME/bin` location to be avialable from terminal 
 
+### scheduling scripts
+#### cron
+cron \- daemon to execute scheduled commands (Vixie Cron) <br />
+Each user gets a cron tab that lists which commands or scripts will be automatically run by the user <br />
+1. `crontab -e` # edit crontab of current user <br />
+2. format: m h  dom mon dow   command (<minute[0-59]> <hour[0-23]> <day_of_the_month> <month[[1-12][JAN-DEC]]> <day_of_the_week[[0-6][SUN-SAT]]> <command_to_run>) <br />
+   20 11 means it will run at 11:20AM
+   20 11  10 JUN SUN <command> this command will run at 11:20AM of JUN only if 10th JUN is Sunday 
+   \*  \* means any minute any day
+
+ 
 
 
 ### aliases
