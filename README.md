@@ -48,8 +48,8 @@ Each user gets a cron tab that lists which commands or scripts will be automatic
 2. format: `m h  dom mon dow   command` <br />
 <minute[0-59]> <br /> <hour[0-23]> <br /> <day_of_the_month[1-31]> <br /> <month[[1-12][JAN-DEC]]> <br /> <day_of_the_week[[0-6][SUN-SAT]]>  <br />
 
-   20 11 means it will run at 11:20AM <br />
-   20 11  10 JUN SUN <command> this command will run at 11:20AM of JUN only if 10th JUN is Sunday  <br />
+   `20 11 * * * <command>` means it will run at 11:20AM every day,month, year <br />
+   `20 11  10 JUN SUN <command>` this command will run at 11:20AM of JUN only if 10th JUN is Sunday  <br />
    \*  \* means any minute any day <br /> 
    `* *  * * * <command>` # the command will run every minute every hour  <br />
    `0,15,30,45  * * * * echo "Hello23"` # evry 15 minutes run this command <br />
