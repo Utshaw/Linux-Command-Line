@@ -45,11 +45,15 @@ Nano configuration file location: /etc/nanorc
 cron \- daemon to execute scheduled commands (Vixie Cron) <br />
 Each user gets a cron tab that lists which commands or scripts will be automatically run by the user <br />
 1. `crontab -e` # edit crontab of current user <br />
-2. format: m h  dom mon dow   command (<minute[0-59]> <hour[0-23]> <day_of_the_month> <month[[1-12][JAN-DEC]]> <day_of_the_week[[0-6][SUN-SAT]]> <command_to_run>) <br />
+2. format: m h  dom mon dow   command (<minute[0-59]> <hour[0-23]> <day_of_the_month[1-31]> <month[[1-12][JAN-DEC]]> <day_of_the_week[[0-6][SUN-SAT]]> <command_to_run>) <br />
    20 11 means it will run at 11:20AM <br />
    20 11  10 JUN SUN <command> this command will run at 11:20AM of JUN only if 10th JUN is Sunday  <br />
    \*  \* means any minute any day <br /> 
-   \* \*  \* \* \* <command> the command will run every minute every hour 
+   `* *  * * * <command>` # the command will run every minute every hour  <br />
+   `0,15,30,45  * * * * echo "Hello23"` # evry 15 minutes run this command <br />
+   `*/15  \* \3 \* \* echo "Hello23"` # evry 3 days every 15 minutes run this command <br />
+   `59 23 * JAN,DEC * echo Hello`  # run the command only on JAN and DEC each day at 23:59 <br />
+   
    
 
  
@@ -331,4 +335,5 @@ wc - print newline, word, and byte counts for each file <br />
 
 
 ## Resources
-man page: https://www.youtube.com/watch?v=uJnrh9hAQR0
+- man page: https://www.youtube.com/watch?v=uJnrh9hAQR0  
+- crontab: https://crontab.guru/
