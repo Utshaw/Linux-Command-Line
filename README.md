@@ -32,6 +32,7 @@ M\- symbol = alt <br />
 Nano configuration file location: /etc/nanorc
 
 ### bash script file
+- Note: bash scripts can be used for scheduling
 1. name the file as script.sh
 2. the first line will be #!/bin/bash (Shebang line)
 3. chmod +x script.sh
@@ -39,7 +40,10 @@ Nano configuration file location: /etc/nanorc
 5. In the end of the ~/.bashrc file add this line: `PATH="$PATH:$HOME/bin"`
 6. The above line will cause all of the files in `$HOME/bin` location to be avialable from terminal 
 
+
+
 ### aliases
+- Note: aliases can't be used for scheduling
 aliases are mainly used as shorter form of the original longer command
 steps:
 - create a `.bash_aliases` file in home 
