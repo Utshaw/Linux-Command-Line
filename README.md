@@ -45,7 +45,11 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `sudo apt-get update` # updates the cache of packages and dependencies
 - `sudo apt-get upgrade` # upgrades every software in the local machine to the newest version 
 - `sudo apt-get install x11-apps` # install x11-apps in the local machine
-
+#### Downloading and modifying source code
+- `nano /etc/apt/sources.list` and uncomment all of  the lines in front of deb-src
+- `sudo apt-get update` # updates the cache
+- `sudo apt-get install dpkg-dev`
+- `sudo apt-get source <package_name>` # downloads source code in pwd
 
 
 ### Basics
