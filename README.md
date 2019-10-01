@@ -36,6 +36,7 @@ Command are instruction that are written in the terminal and submitted to the sh
 2. Universe: Community maintained free and open source
 3. Restricted: Proprietary drivers for devices (can be open source)
 4. Multiverse: Software restricted by copyright or legal issues (can be open source)
+
 **Note: Fedora only supports free softwares <br />**
 
 ### Ubuntu package manager
@@ -58,6 +59,7 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `sudo apt-get autoremove`# remove packages those were previously installed as dependencies but no longer required by any packages
 - `sudo apt-get clean` # deletes all compressed package archives 
 - `sudo apt-get autoclean`  # deletes package archives that are no longer accessible 
+
 **Note: package manager downloads archive files (package archives) prior to installing the package into the system. These are located at /var/cache/apt/archives**
 
 ### Basics
