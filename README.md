@@ -32,6 +32,9 @@ Command are instruction that are written in the terminal and submitted to the sh
 2. Universe: Community maintained free and open source
 3. Restricted: Proprietary drivers for devices
 4. Multiverse: Software restricted by copyright or legal issues
+**Note: Fedora only supports free softwares <br />**
+
+
 
 
 
