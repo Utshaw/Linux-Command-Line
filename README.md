@@ -24,16 +24,22 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `make` # compilation probably
 - `sudo make install` install the software
 
+### Check your ubuntu distribution codename
+`lsb_release -a`
+
 ### Ubuntu software repositories
+- is like a library of software
 - Used for Installing softwares
 - Used for Updating softwares to updated version
 - Four different software repositores: 
 1. Main: Cononical supported free and open source software
 2. Universe: Community maintained free and open source
-3. Restricted: Proprietary drivers for devices
-4. Multiverse: Software restricted by copyright or legal issues
+3. Restricted: Proprietary drivers for devices (can be open source)
+4. Multiverse: Software restricted by copyright or legal issues (can be open source)
 **Note: Fedora only supports free softwares <br />**
 
+### Ubuntu package manager
+#### APT (Advanced Package Tool)
 
 
 
