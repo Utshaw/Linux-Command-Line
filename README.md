@@ -52,6 +52,14 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `sudo apt-get source <package_name>` # downloads source code in pwd
 
 
+#### Uninstallting package
+- `sudo apt-get remove <package_name>` # uninstall package_name from the system but configuration files are left in the system
+- `sudo apt-get purge <package_name>` # uninstall package_name and all of the configuration files. (preferred way)
+- `sudo apt-get autoremove`# remove packages those were previously installed as dependencies but no longer required by any packages
+- `sudo apt-get clean` # deletes all compressed package archives 
+- `sudo apt-get autoclean`  # deletes package archives that are no longer accessible 
+**Note: package manager downloads archive files (package archives) prior to installing the package into the system. These are located at /var/cache/apt/archives**
+
 ### Basics
 - 0 = standard input; 1 = standard output; 2 = standard error <br />
 - redirection of standard output breaks the pipleline <br />
