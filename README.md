@@ -27,7 +27,7 @@ Command are instruction that are written in the terminal and submitted to the sh
 ### Check your ubuntu distribution codename
 `lsb_release -a`
 
-### Ubuntu software repositories
+### Ubuntu software repositories (https://help.ubuntu.com/community/Repositories/Ubuntu)
 - is like a library of software
 - Used for Installing softwares
 - Used for Updating softwares to updated version
