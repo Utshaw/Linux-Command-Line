@@ -44,7 +44,7 @@ Command are instruction that are written in the terminal and submitted to the sh
 - list of all available packages is located at `var/lib/apt/lists` (this folder is called `apt-cache`)
 - `sudo apt-get update` # updates the cache of packages and dependencies
 - `sudo apt-get upgrade` # upgrades every software in the local machine to the newest version 
-
+- `sudo apt-get install x11-apps` # install x11-apps in the local machine
 
 
 
