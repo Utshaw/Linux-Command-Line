@@ -42,7 +42,7 @@ Command are instruction that are written in the terminal and submitted to the sh
 #### APT (Advanced Package Tool)
 - deals with installing dependencies and makes life easier
 - list of all available packages is located at `var/lib/apt/lists` (this folder is called `apt-cache`)
-- `sudo apt-get update` # updates the cache for packages
+- `sudo apt-get update` # updates the cache of packages and dependencies
 
 
 
