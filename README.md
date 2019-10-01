@@ -22,8 +22,16 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `cd coreutils-8.28/` 
 - `bash configure` # configure compuler and create Makefile
 - `make` # compilation probably
-- `sudo make install` install the commands
+- `sudo make install` install the software
 
+### Ubuntu software repositories
+- Used for Installing softwares
+- Used for Updating softwares to updated version
+- Four different software repositores: 
+1. Main: Cononical supported free and open source software
+2. Universe: Community maintained free and open source
+3. Restricted: Proprietary drivers for devices
+4. Multiverse: Software restricted by copyright or legal issues
 
 
 
