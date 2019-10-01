@@ -10,6 +10,20 @@ Terminal is just a graphical interface between the shell program and command. Th
 ### Commands
 Command are instruction that are written in the terminal and submitted to the shell for interpretation.
 
+### GNU Project (http://www.gnu.org/)
+- Free software is open source but not all open source is free software 
+- Richard Stallman began development of GNU operating system in 1983
+- The freedom is provided by GNU public license (GPL)
+- In 1991 Linus Torvalds created the Linux Kernel and published it under GPL v2.0
+
+### Installing free software (for example: coreutils)
+- `wget https://ftp.gnu.org/gnu/coreutils/coreutils-8.28.tar.xz` 
+- `tar -xvJf coreutils-8.28.tar.xz`
+- `cd coreutils-8.28/` 
+- `bash configure` # create Makefile
+- `make`
+
+
 ### Basics
 - 0 = standard input; 1 = standard output; 2 = standard error <br />
 - redirection of standard output breaks the pipleline <br />
@@ -312,6 +326,8 @@ options: <br />
  `tar -cvjf ourArchive.tar.bz2 diary.txt utshaw.txt diary.txt` # create bz2 file in one command <br />
  `tar -xvzf ourArchive.tar.gz` # unzips from gz file <br />
  `tar -xvjf ourArchive.tar.bz2` # unzips from bz2 file <br />
+ `tar -xvJf ourArchive.tar.xz`  # extract from tar.xz file <br />
+ 
  
 #### gzip
 gzip is faster but with less compression power means file size won't be that small <br />
