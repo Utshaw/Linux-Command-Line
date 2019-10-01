@@ -20,8 +20,11 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `wget https://ftp.gnu.org/gnu/coreutils/coreutils-8.28.tar.xz` 
 - `tar -xvJf coreutils-8.28.tar.xz`
 - `cd coreutils-8.28/` 
-- `bash configure` # create Makefile
-- `make`
+- `bash configure` # configure compuler and create Makefile
+- `make` # compilation probably
+- `sudo make install` install the commands
+
+
 
 
 ### Basics
