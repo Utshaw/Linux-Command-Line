@@ -1,4 +1,7 @@
-# Linux-Command-Line
+# Linux-Command-Line  ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+
+
+	
 ## Bash Shell Command \& Scripting
 
 ### Shell
