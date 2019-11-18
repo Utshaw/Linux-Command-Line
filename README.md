@@ -393,7 +393,8 @@ wc - print newline, word, and byte counts for each file <br />
 `wc -l`  # outputs number of lines the command received in the standard input <br />
 
 ### Download YouTube videos
-[youtube-dl](https://github.com/ytdl-org/youtube-dl) <br/>
+- Folow instructions [youtube-dl](https://github.com/ytdl-org/youtube-dl) <br/>
+- Install [ffmpeg](https://stackoverflow.com/questions/30770155/ffprobe-or-avprobe-not-found-please-install-one) `sudo apt-get install ffmpeg`
 
 
 ## Resources
