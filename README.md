@@ -392,7 +392,8 @@ zip \- package and compress (archive) files <br />
 wc - print newline, word, and byte counts for each file <br />
 `wc -l`  # outputs number of lines the command received in the standard input <br />
 
-
+### Download YouTube videos
+[youtube-dl](https://github.com/ytdl-org/youtube-dl) <br/>
 
 
 ## Resources
