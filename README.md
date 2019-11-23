@@ -365,6 +365,8 @@ options: <br />
 - \-v, \-\-verbose Verbosely list files processed.
 - \-f lets tar command accept files
 - \-t List  the  contents of an archive. 
+- \-C, \-\-directory=DIR Change  to DIR before performing any operations.This option is  order-sensitive,<br /> i.e. it affects all options that follow. <br />
+`tar -xvzf ideaIU-2019.2.4.tar.gz -C ~/` # extracts to home folder <br />
 `tar -cvf ourArchive.tar file[1-3].txt` # create a new archive named ourArchive.tar <br />
 `tar -tf ourArchive.tar ` # outputs contents of ourArchive.tar <br />
 `tar -xvf ourArchice.tar` # extracts ourArchive.tar <br />
