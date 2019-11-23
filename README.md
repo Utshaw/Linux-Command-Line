@@ -65,6 +65,11 @@ Command are instruction that are written in the terminal and submitted to the sh
 
 **Note: package manager downloads archive files (package archives) prior to installing the package into the system. These are located at /var/cache/apt/archives**
 
+### Snap packages
+- Install with snap: `sudo snap install <package_name>` Example: `sudo snap install rambox`
+- Update packages installed with snap: `snap refresh `
+- Uniinstall packages: `sudo snap remove rambox`
+
 ### Basics
 - 0 = standard input; 1 = standard output; 2 = standard error <br />
 - redirection of standard output breaks the pipleline <br />
@@ -391,6 +396,9 @@ zip \- package and compress (archive) files <br />
 #### wc
 wc - print newline, word, and byte counts for each file <br />
 `wc -l`  # outputs number of lines the command received in the standard input <br />
+
+
+
 
 ### Download YouTube videos
 - Folow instructions [youtube-dl](https://github.com/ytdl-org/youtube-dl) <br/>
