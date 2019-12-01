@@ -171,7 +171,7 @@ grep command is canse\-sensitive <br />
 `grep -i "our boys" gadsby.txt` # sentence search <br />
 `grep -vi e gadsby.txt` # outputs those lines without the letter e  <br />
 `grep -ic "e" hello.txt  gadsby.txt` # multiple file search <br />
-
+[How do I find all files containing specific text on Linux?](https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux)
  
 
 #### man
