@@ -164,7 +164,7 @@ options: <br />
 <br />
 
 grep command is canse\-sensitive <br />
-
+`grep -rnw './' -e '<text_to_find>'` # search for all files that contain a specific text<br />
 `grep e hello.txt` # outputs the line(s) containing letter e in hello.txt <br />
 `grep you -c gadsby.txt` # outputs number of references of word 'you' in gadsby.txt file <br />
 `grep -i gadsby gadsby.txt`  # case insensitive search <br />
