@@ -86,6 +86,20 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `directory/*` means everything inside the directory but not itself
 - `directory/` means directory itself + everything inside the directory 
 
+## EUID vs UID
+- EUID: Effective User ID
+- UID: User ID
+- When the setuid bit is set, the file will execute with the permission of the owner of the file & only then EUID=owner's id, UID=user executing the script; other times EUID=UID
+- This is rarely seen as modern linux OS doesn't allow scripts to be setuid
+- root's UID=0
+- if a command/program/script exits successfully then the exit status is 0 otherwise, the exit status is non-zero
+
+## Shell built-in
+[Stackoverflow post about shell-builtin](https://stackoverflow.com/questions/3192373/what-are-shell-built-in-commands-in-linux) <br />
+- builtin commands are part of the shell, and are implemented as part of the shell's source code. 
+- see the help page by `help <shell_built-in>`; ex: `help read` # read is a shell-built in
+
+
 ### nano text editor
 ^ symbol = ctrl <br />
 M\- symbol = alt <br />
@@ -94,11 +108,15 @@ Nano configuration file location: /etc/nanorc
 ### bash script file
 - Note: bash scripts can be used for scheduling
 1. name the file as script.sh
-2. the first line will be #!/bin/bash (Shebang line)
+2. the first line will be #!/bin/bash (Shebang line); the rest of the script will be interpreted by bash script
 3. chmod +x script.sh
 4. In order to run the script from anywhere we need to add the path to $PATH environment variable
 5. In the end of the ~/.bashrc file add this line: `PATH="$PATH:$HOME/bin"`
 6. The above line will cause all of the files in `$HOME/bin` location to be avialable from terminal 
+
+## read 
+- It is a bash shell built-in
+
 
 ### scheduling scripts
 #### cron
@@ -320,6 +338,10 @@ oprtions: <br />
 `ls -l | head -n 20 | sort -k 5 -n ` # sorts files based on size  <br />
 `ls -lh | head -n 20 | sort -k 5  -hr` # human readable format sort
 `ls -lh /etc | head -n 20 | sort -k 6 -M` # sort by month
+
+#### su
+- temporarily substitute users
+- `command -options arguments`
 
 
 #### mv 
