@@ -1,0 +1,6 @@
+==> /etc/passwd <==
+root:x:0:0:root:/root:/bin/bash
+
+==> /etc/hosts <==
+127.0.0.1	localhost
+head: cannot open '/fakefile' for reading: No such file or directory

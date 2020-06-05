@@ -9,7 +9,7 @@ echo "You UID is ${USER_ID}"
 USER_NAME=$(id -un)
 if [[ "${?}" -ne 0 ]] # ? variable holds exit status of the most recently executed command
 then
-    echo "The id command did not execut successfully"
+    echo "The id command did not execute successfully"
     exit 1
 fi
 

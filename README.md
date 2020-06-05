@@ -41,6 +41,10 @@ Command are instruction that are written in the terminal and submitted to the sh
 4. Multiverse: Software restricted by copyright or legal issues (can be open source)
 
 **Note: Fedora only supports free softwares <br />**
+### Checksum
+**Ref: [How-To Geek](https://www.howtogeek.com/363735/what-is-a-checksum-and-why-should-you-care/)** <br />
+- Checksums may also be called “hashes.”
+- The algorithm uses a cryptographic hash function that takes an input and produces a string (a sequence of numbers and letters) of a fixed length
 
 ### Ubuntu package manager
 #### APT (Advanced Package Tool)
@@ -94,6 +98,12 @@ Command are instruction that are written in the terminal and submitted to the sh
 - root's UID=0
 - if a command/program/script exits successfully then the exit status is 0 otherwise, the exit status is non-zero
 
+## User ID of accounts
+- system/application accounts have lower uids (<1000)
+- normal user has id>=1000
+- ids are set in file /etc/login.defs
+
+
 ## Shell built-in
 [Stackoverflow post about shell-builtin](https://stackoverflow.com/questions/3192373/what-are-shell-built-in-commands-in-linux) <br />
 - builtin commands are part of the shell, and are implemented as part of the shell's source code. 
@@ -113,10 +123,49 @@ Nano configuration file location: /etc/nanorc
 4. In order to run the script from anywhere we need to add the path to $PATH environment variable
 5. In the end of the ~/.bashrc file add this line: `PATH="$PATH:$HOME/bin"`
 6. The above line will cause all of the files in `$HOME/bin` location to be avialable from terminal 
+7. bash shell keeps hash to remember all program locations to execute. `hash -r` resets that hash for all remembered locations
+
+## Arithmetic Expression
+```
+NUM=$(( 1 + 2 ))
+echo "${NUM}" # 3
+NUM=$(( 6 * 8 ))
+echo "${NUM}" # 48
+NUM=$(( 6 / 4 ))
+echo "${NUM}" # 1 integer division; doesn't support floatin point arithmetic
+REM=$(( 6 % 4 ))
+echo "${REM}" # 2 -> remainder of 2
+DICEA='3'
+DICEB='6'
+NUM=$(( DICEA + DICEB )) 
+echo "${NUM}" # 9
+MY_NUM=9
+(( MY_NUM++ ))
+echo "${MY_NUM}" # 10
+(( MY_NUM-- ))
+echo "${MY_NUM}" # 9
+(( MY_NUM+=5 ))
+echo "${MY_NUM}" # 14
+OTHER_NUM=$(( MY_NUM+25 ))
+echo "${OTHER_NUM}" # 39
+
+
+```
 
 ## read 
 - It is a bash shell built-in
-
+#### basename
+- strip directory and suffix from filenames
+```
+basename /farhan/tanvir/utshaw/file.txt
+# Output: file.txt
+```
+#### dirname
+- strip last component from file name
+```
+dirname /farhan/tanvir/utshaw/file.txt
+# Output: /farhan/tanvir/utshaw
+```
 
 ### scheduling scripts
 #### cron
@@ -212,7 +261,7 @@ Output:
 #### cat
 reads from standard input and writes into standaed output
 
-standard output redirection: 
+## standard output redirection: 
 
 `cat 1> output.txt` # redirects standard output; cleans the taget file and writes into it
 
@@ -220,7 +269,7 @@ standard output redirection:
 
 `cat >> output.txt` # redirects standard output; appends into the target file
 
-standard input redirection: 
+## standard input redirection: 
 
 `cat 0< input.txt` # redirects standard input; reads from the input.txt and loads them into cat program
 
@@ -232,6 +281,17 @@ standard input redirection:
 
 `cat file1.txt file2.txt file3.txt > compile.txt` # concatenating all of the outputs and puts them into compile.txt <br/>
 `cat file[1-3]txt > compile.txt` # concatenating all of the outputs and puts them into compile.txt <br/>
+
+### File Descriptor
+- Number that represents an open file
+- Every new process starts with three file descriptor
+- FD 0 STDIN
+- FD 1 STDOUT
+- FD 2 STDERR
+- Linux represents everything as file
+- Resources like keyboard, montior are treated like a file
+- FDs are like pointers of sources of data or where data is displayed
+
 
 
 #### tac
@@ -343,6 +403,8 @@ oprtions: <br />
 - temporarily substitute users
 - `command -options arguments`
 
+#### which
+- `which -a python3` # prints all matching executables in the PATH
 
 #### mv 
 mv - move (rename) files <br />
@@ -431,5 +493,6 @@ wc - print newline, word, and byte counts for each file <br />
 
 
 ## Resources
+- Cheat sheet: [Linux Training Academy](https://www.linuxtrainingacademy.com/wp-content/uploads/2016/12/LinuxCommandLineCheatSheet.pdf?__s=jprlmg9dmtldyn6uoprk)
 - man page: https://www.youtube.com/watch?v=uJnrh9hAQR0  
 - crontab: https://crontab.guru/
