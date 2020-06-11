@@ -66,6 +66,14 @@ Command are instruction that are written in the terminal and submitted to the sh
 - `sudo apt-get autoremove`# remove packages those were previously installed as dependencies but no longer required by any packages
 - `sudo apt-get clean` # deletes all compressed package archives 
 - `sudo apt-get autoclean`  # deletes package archives that are no longer accessible 
+### Uninstalling deb packages (installed with dpkg)
+<img src="img/1.png"  style="display:block">
+
+- Search the package name ex: 'foliate'
+- If installed it will give fullname with `ii`
+- Use the fullname to uninstall: `sudo dpkg -P  com.github.johnfactotum.foliate`
+
+
 
 **Note: package manager downloads archive files (package archives) prior to installing the package into the system. These are located at /var/cache/apt/archives**
 
