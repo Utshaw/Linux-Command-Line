@@ -493,6 +493,7 @@ wc - print newline, word, and byte counts for each file <br />
 `wc -l`  # outputs number of lines the command received in the standard input <br />
 
 ## tmux
+- [Complete tmux Tutorial](https://youtu.be/Yl7NFenTgIo)
 ```
 sudo apt-get install tmux
 ```
@@ -511,6 +512,7 @@ sudo apt-get install tmux
 - Ex: `tmux rename-session -t 0 git`
 - Create a session with name `tmux new -s <name>`
 - Killing session: `tmux kill-session -t <session_name>` 
+
 
 
 ### Download YouTube videos
