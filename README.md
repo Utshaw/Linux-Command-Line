@@ -507,10 +507,10 @@ sudo apt-get install tmux
 - View tmux sessoins: `tmux ls`
 - Attach to running session: `tmux attach -t <session_name>`
 - Ex: `tmux attach -t 0`
-- Rename tmux session: `tmux rename-session -t <session_id> <renamed_session>`
+- Rename tmux session: `tmux rename-session -t <session_name> <renamed_session>`
 - Ex: `tmux rename-session -t 0 git`
 - Create a session with name `tmux new -s <name>`
-
+- Killing session: `tmux kill-session -t <session_name>` 
 
 
 ### Download YouTube videos
