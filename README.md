@@ -494,17 +494,18 @@ wc - print newline, word, and byte counts for each file <br />
 
 ## tmux
 - [Complete tmux Tutorial](https://youtu.be/Yl7NFenTgIo)
+- [Cheatsheet](https://tmuxcheatsheet.com/)
 ```
 sudo apt-get install tmux
 ```
 - Create new pane: Ctrl+B+% <br />
 - Switch between pane: Ctrl + B + -> / <- <br />
 - Quit a pane: `exit` <br />
-- Create new window: Ctrl + b + c
-- Go to windows 1 : Ctrl + b + 1
-- Go to windows 0 : Ctrl + b + 0
-- Rename window: `Ctrl + b + ,` then rename enter
-- Detach session: `Ctrl + b + d`
+- Create new window: Ctrl + b  c
+- Go to windows 1 : Ctrl + b  1
+- Go to windows 0 : Ctrl + b  0
+- Rename window: `Ctrl + b  ,` then rename enter
+- Detach session: `Ctrl + b  d`
 - View tmux sessoins: `tmux ls`
 - Attach to running session: `tmux attach -t <session_name>`
 - Ex: `tmux attach -t 0`
