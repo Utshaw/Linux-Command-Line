@@ -505,7 +505,7 @@ sudo apt-get install tmux
 - Go to windows 1 : Ctrl + b  1
 - Go to windows 0 : Ctrl + b  0
 - Rename window: `Ctrl + b  ,` then rename enter
-- Detach session: `Ctrl + b  d`
+- Detach session: `Ctrl + b,  d`
 - View tmux sessoins: `tmux ls`
 - Attach to running session: `tmux attach -t <session_name>`
 - Ex: `tmux attach -t 0`
@@ -513,6 +513,17 @@ sudo apt-get install tmux
 - Ex: `tmux rename-session -t 0 git`
 - Create a session with name `tmux new -s <name>`
 - Killing session: `tmux kill-session -t <session_name>` 
+
+**Use case scenario**
+
+```
+tmux # start a session 0
+source venv/bin/activate
+export GOOGLE_APPLICATION_CREDENTIALS=/home/gcp_key.json
+cd python; sudo python3 driver.py
+Ctrl + b , d # detaching from session 0
+tmux attach -t 0 # check the running session 0
+```
 
 
 
