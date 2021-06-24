@@ -579,6 +579,18 @@ tmux attach -t 0 # check the running session 0
 ## rsync
 
 - https://youtu.be/qE77MbDnljA
+  Usage:
+
+```
+rsync -av get-docker.sh mirage@192.168.1.18:~/Desktop/
+```
+
+## xclip
+
+```
+xclip -sel c < file
+
+```
 
 ### Download YouTube videos
 
